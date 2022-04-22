@@ -16,7 +16,6 @@ public class YouTubeClient {
     public YouTubeClient(HomeBaseProperties homeBaseProperties, RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
         this.youtubeApiKey = homeBaseProperties.youTubeApiKey;
-        System.out.println(youtubeApiKey);
     }
 
     private String appendKey(String urlEndpoint) {

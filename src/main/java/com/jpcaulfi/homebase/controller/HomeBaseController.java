@@ -13,7 +13,7 @@ public class HomeBaseController {
     HomeBaseService homeBaseService;
 
     @GetMapping("/switchCategory/{newCategory}")
-    public String switchCategory(@PathVariable String newCategory) {
+    public String switchCategory(@PathVariable String newCategory) throws InterruptedException {
         homeBaseService.switchCategory(newCategory);
         return "Category changed to " + newCategory.toUpperCase() + ". Refreshing content...";
     }
