@@ -1,9 +1,16 @@
 package com.jpcaulfi.homebase.service;
 
+import com.jpcaulfi.homebase.client.YouTubeClient;
 import com.jpcaulfi.homebase.model.HomeBaseCategory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Service;
 
+@Service
 public class HomeBaseService implements CommandLineRunner {
+
+    @Autowired
+    private YouTubeClient youTubeClient;
 
     private HomeBaseCategory CATEGORY = HomeBaseCategory.POLITICS;
 
@@ -11,7 +18,7 @@ public class HomeBaseService implements CommandLineRunner {
     // This will run on application load.
     @Override
     public void run(String... args) throws Exception {
-
+        youTubeClient.testYouTubeApi();
     }
 
     // Here's where we can switch the current category and re-shuffle

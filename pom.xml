@@ -47,6 +47,11 @@
 						</exclude>
 					</excludes>
 				</configuration>
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						source -->
+<!--					</execution>-->
+<!--				</executions>-->
 			</plugin>
 		</plugins>
 	</build>

@@ -3,7 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-!**/src/main/resources/secret.properties
+!**/src/main/resources/home_base.env
 
 ### STS ###
 .apt_generated
